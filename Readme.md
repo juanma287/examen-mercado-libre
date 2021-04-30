@@ -23,35 +23,28 @@ Creating examen-meli_db_1    ... done
 Creating examen-meli_php_1   ... done
 Creating examen-meli_nginx_1 ... done
 ```
-
-4. En el atchivo .env ubicado la raiz de la proyecto symfony, reemplazar DATABASE_URL por:
-
-```
-DATABASE_URL=mysql://test_user:test_ps@db:3306/test_db?serverVersion=5.7
-```
-
-5. Acceder al container donde se encuentra PHP mediante el comando: 
+4. Acceder al container donde se encuentra PHP mediante el comando: 
 
 ```
 docker exec -it  examen-meli_php_1 bash
 ```
 
-6.  instalar Symfony mediante el comando: 
+5.  instalar Symfony mediante el comando: 
 ```
 composer install 
 ```
 
-7. URL del proyecto: http://localhost:80/mutant
+6. URL del proyecto: http://localhost:80/mutant
 
 ## Extras
 
-1. Acceder a la base de datos por consola:
-- Me conecto al bash en el contenedor MySQL en ejecución:
+1. Para correr los test:
+- Me conecto al bash en el contenedor PHP en ejecución:
 ```
-docker exec -it  examen-meli_db_1 bash
+docker exec -it  examen-meli_php_1 bash
 ```
-- Ejecuto el cliente MySQL desde el contenedor bash MySQL:
+- Ejecuto el comando:
 
 ```
-mysql -utest_user -ptest_ps
+php bin/phpunit
 ```
