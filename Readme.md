@@ -34,7 +34,8 @@ docker exec -it  examen-meli_php_1 bash
 composer install 
 ```
 
-6. URL del proyecto: http://localhost:80/mutant
+6. URL del proyecto NIVEL 1: http://localhost:80/mutant
+7. URL del proyecto NIVEL 2: http://localhost:80/api/mutant
 
 ## Extras
 
