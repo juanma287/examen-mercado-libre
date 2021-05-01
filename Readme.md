@@ -36,6 +36,7 @@ composer install
 
 6. URL del proyecto NIVEL 1: http://localhost:80/mutant
 7. URL del proyecto NIVEL 2: http://localhost:80/api/mutant
+8. URL del proyecto NIVEL 3: http://localhost:80/api/stats
 
 ## Extras
 
@@ -49,3 +50,16 @@ docker exec -it  examen-meli_php_1 bash
 ```
 php bin/phpunit
 ```
+2. Acceder a la base de datos por consola:
+- Me conecto al bash en el contenedor MySQL en ejecución:
+```
+docker exec -it  examen-meli_db_1 bash
+```
+- Ejecuto el cliente MySQL desde el contenedor bash MySQL:
+
+```
+mysql -utest_user -ptest_ps
+```
+
+
+Good luck 😀
