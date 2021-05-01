@@ -1,6 +1,6 @@
 MODELO
 Crear la base de datos: php bin/console doctrine:database:create
-rear entidad: php bin/console make:entity
+Crear entidad: php bin/console make:entity
 Crear las tablas en la base y  actualizar (con force): php bin/console doctrine:schema:update --force
 Obs: cuado cambiamos un campo desde el codigo, tenemos que correr este comando para actualizar la base 
 
@@ -29,9 +29,21 @@ Para correr los test:
 
 
 
-
-
 INFO IMPORTANTE AL INICIAR UN PROYECTO EN SYMFONY 5
 https://www.ticarte.com/contenido/symfony-5-tutorial-para-desarrollar-tu-primera-aplicacion-web
 INFOMACION INTERESANTE SOBRE SYMFONY
 https://jnjsite.com/tutoriales-para-aprender-symfony/
+
+
+GIT - Tags
+
+Crear: git tag nivel2 -m "Se creo la api solicitada en el nivel 2"
+Subit a repo: git push --tags
+
+
+
+MYSQL comand
+mysql>show databases;
+mysql> use miDB;
+mysql> show tables;
+mysql> describe miTable;
