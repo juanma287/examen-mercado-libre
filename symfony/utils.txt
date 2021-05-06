@@ -22,7 +22,7 @@ Despues de instalar phpunit-bridge, corremos:
 ::php bin/phpunit
 La primera vez que lo ejecutemos se instalará todo lo necesario para lanzar nuestra bateria de pruebas:
 
-Para crear test unitarios, corremos:
+Para crear test unitarios, corremos:  // Iport: el comando de creacion de test dolo funciona si estamos en DEV
 :: php bin/console make:unit-test
 Para correr los test:
 :: php bin/phpunit
